@@ -155,6 +155,7 @@ package.targets = ( [
         path: "aws-common-runtime/aws-c-mqtt",
         exclude: awsCMqttPlatformExcludes,
         cSettings: [
+            .define("AWS_MQTT_WITH_WEBSOCKETS")
         ]
     ),
     .target(
