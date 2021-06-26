@@ -12,7 +12,7 @@ ioDependencies.append(.product(name: "S2N", package: "S2N"))
 calDependencies.append(.product(name: "LibCrypto", package: "S2N"))
 #endif
 
-var package = Package(name: "aws-crt-swift",
+var package = Package(name: "AwsCrt",
     platforms: [.iOS(.v11), .macOS(.v10_14)],
     products: [
       .library(name: "AwsCommonRuntimeKit", targets: ["AwsCommonRuntimeKit"]),
